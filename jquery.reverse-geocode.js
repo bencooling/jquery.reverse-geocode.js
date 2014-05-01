@@ -19,7 +19,16 @@
     }
 }(function ($) {
 
-  // plugin here
-  $.fn.extend();
+  $.fn.reverseGeocode = function(settings)
+  {
+    // plugin here
+
+
+    settings = $.extend({}, $.fn.jScrollPane.defaults, settings);
+  }
+
+  $.fn.reverseGeocode.defaults = {
+
+  }
 
 }));
