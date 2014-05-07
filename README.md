@@ -7,20 +7,35 @@ Populate common location based form fields: country, state, postcode, suburb etc
 usage
 -----
 
-###Apply to form
+###Markup
 
-Attempt to populate all location based form fields within a form.
+    Add data attributes to form field
+
+    <input id="suburb" type="text" name="suburb" data-component="locality" data-format="long_name" />
+
+###Apply to form
 
     $('form').reverseGeocode();
 
-Fields must have a class of country, state, postcode, suburb...
+bower
+-----
 
-    <select name="state" class="state">...</state>
+The provided example uses requirejs.
+Best to manage dependencies via Bower.
 
-###Apply to specific fields
+    npm install -g bower
 
-  $('[name=state]').reverseGeocode('state');
+    bower install
 
+
+testing locally
+---------------
+
+Chrome/Opera wont allow geolocation from file://, so need to serve it from a HTTP server
+
+  npm install -g simple-http-server
+
+  nserver
 
 license
 -------

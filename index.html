@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <link rel="stylesheet" href="assets/style.css">
+    <script data-main="main" src="vendor/requirejs/require.js"></script>
+  </head>
+  <body>
+    <h1>jquery.reverse-geocode</h1>
+    <p>requirejs implementation</p>
+    <form>
+      <div class="form-row">
+        <label for="state">State</label>
+        <select id="state" name="state" data-component="administrative_area_level_1" data-format="short_name">
+          <option>Please select a state</option>
+          <option>QLD</option>
+          <option>NW</option>
+        </select>
+      </div>
+      <div class="form-row">
+        <label for="country">Country</label>
+        <select id="country" name="country" data-component="country" data-format="short_name">
+          <option>Please select a country</option>
+          <option value="AU">Australia</option>
+          <option value="NZ">New Zealand</option>
+          <option value="USA">United States of America</option>
+          <option value="UK">United Kingdom</option>
+        </select>
+      </div>
+      <div class="form-row">
+        <label for="suburb">Suburb</label>
+        <input id="suburb" type="text" name="suburb" data-component="locality" data-format="long_name" />
+      </div>
+      <div class="form-row">
+        <label for="street">Street</label>
+        <input id="street" type="text" name="street" data-component="route" data-format="long_name" />
+      </div>
+      <div class="form-row">
+        <label for="postcode">Postcode</label>
+        <input id="postcode" type="text" name="postcode" data-component="postal_code" data-format="long_name" />
+      </div>
+    </form>
+  </body>
+</html>

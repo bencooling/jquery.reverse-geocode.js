@@ -1,0 +1,10 @@
+{
+  "name": "jquery-reverse-geocode",
+  "author": "Ben Cooling",
+  "private": false,
+  "dependencies": {
+    "requirejs": "latest",
+    "requirejs-plugins": "latest",
+    "jquery": "latest"
+  }
+}
