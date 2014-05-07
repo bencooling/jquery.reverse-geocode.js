@@ -62,7 +62,7 @@
         $('[data-component]', $form).each(function(){
           var $field = $(this),
               type   = $field.data('component'),
-              format = $field.data('format'),
+              format = ($field.data('format')) ? $field.data('format') : 'long_name' ,
               component;
 
           for(var i=0, l=components.length; i<l; i++) {
